@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Third task</title>
+</head>
+<body>
+<script type="text/javascript">
+	function add()
+	{
+
+		 var a = document.getElementById("one").value*1;
+		 var b = document.getElementById("two").value*1;
+		 //another method string to integer convert
+		 //var a = pharseInt(document.getElementById("one").value);;
+		 //var b = pharseInt(document.getElementById("two").value);
+		 var total = a + b;
+		alert(total);
+	}
+
+
+
+
+
+
+</script>
+<form>
+	<p>Enter 1st number <input type="number" id="one">
+	</p>
+<p>Enter 2nd number <input type="number" id="two">
+	</p>
+
+	<button onclick="add()">Add</button>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	</head>
+	<body>
+		<form>
+		<p>Enter first number<input type="number" id="one" /></p>
+		<p>Enter second number<input type="number" id="two" /></p>
+
+		<p><select id="chk">
+			<option >Choose one</option>
+			<option >add</option>
+			<option >subtract</option>
+			<option >mulitply</option>
+		</select></p>
+		<p><button onclick="userInput()">calculate</button></p>
+	</form>
+	</body>
+<script>
+
+	function userInput() 
+	{
+		var a = parseInt(document.getElementById("one").value);
+		var b = parseInt(document.getElementById("two").value);
+		var c = document.getElementById("chk").value;
+		
+
+		if(c == "add")
+		{
+			total = a + b;
+			alert (total);
+		} else if(c == "subtract")
+		{
+			total = a - b;
+			alert (total);
+		} else 
+		{
+			total = a * b;
+			alert (total);
+		}
+
+	
+	}
+
+</script>
+</html>
